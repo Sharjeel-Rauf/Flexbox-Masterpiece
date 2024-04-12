@@ -1,0 +1,171 @@
+body {
+    margin: 0;
+}
+
+/* part-1 */
+.header {
+    display: flex;
+    gap: 6px;
+    color: #006ad7;
+    font-weight: bolder;
+    font-size: 25px;
+    margin-left: 23px;
+    font-family: 'Helvetica Neue', Arial, sans-serif; 
+    letter-spacing: 0.5px;
+    line-height: 1.4; 
+}
+/* editing header text */
+.top-article {
+    margin-top: 9px;
+}
+/* editing logo */
+.fa-fire {
+    color: red;
+    margin-top: 38px;
+    font-size: 25px;
+}
+
+/* editing the text  centering the box */
+.font-word {
+    font-family: 'Helvetica Neue', Arial, sans-serif; 
+    letter-spacing: 0.5px;
+    line-height: 1.4; 
+    color: #989898;
+    font-size: 30px;
+}
+/* editing the text inside the text centering the box */
+.font-sub-word {
+    font-family: 'Helvetica Neue', Arial, sans-serif; 
+    letter-spacing: 0.5px;
+    line-height: 1.4; 
+    color: #989898;
+    font-size: 20px;
+}
+
+/* applying flex on the first column of boxes seperately*/
+
+.column-1 {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+/* applying flex on the second column of boxes seperately*/
+
+.column-2 {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+
+/* applying flex on the first line of boxes*/
+.flex-1 {
+    display: flex;
+    gap: 10px;
+    justify-content: left;
+    margin-left: 15px;
+
+}
+
+/* applying flex on the second line of boxes */
+
+.flex-2 {
+    display: flex;
+    gap: 10px;
+    justify-content: left;
+    margin-top: 15px;
+    margin-left: 12px;
+}
+
+
+/* part-2a creating search bar */
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+#search-input {
+    padding: 8px 12px;
+    background-color: white;
+    border: 1px solid #989898;
+    border-radius: 20px; /* Adjust this value to control the curvature */
+    font-size: 25px;
+    width: 85%; 
+    max-width: 1290px; /* Optional: Set a maximum width */
+    
+}
+
+#search-button {
+    padding: 8px 12px;
+    background-color: #006ad7;
+    border-radius: 20px; /* Adjust this value to control the curvature */
+    cursor: pointer;
+    font-size: 25px;
+    color: white;
+    width: 10%; 
+    max-width: 400px; 
+}
+
+#search-button:hover {
+    background-color: #0052a1;
+}
+
+
+/* part-2b */
+/* applying flex on the row of boxes */
+.flex-3 {
+    display: flex;
+    gap: 10px;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    padding-top: 40px;
+    border-top: 3px #989898 solid;
+}
+/* applying flex on each box */
+.column-3 {
+    display: flex;
+    gap: 10px;
+    align-items: left;
+    flex-direction: column;
+}
+
+/* applying flex on two sections that have white boxes */
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+ /* editing each box seperately */
+.white-background:nth-child(2) {
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin: 0 100px;
+}
+.white-background:nth-child(1) {
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin: 0 100px;
+}
+/* media query */
+
+@media (min-width: 900px) {
+    .column-1 {
+        flex-direction: row;
+    }
+    
+ 
+    
+    .column-2 {
+      flex-direction: row;
+    }
+
+    .column-3 {
+        flex-direction: column;
+    }
+}
